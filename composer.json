@@ -1,0 +1,28 @@
+
+{
+    "name": "dbtk/config",
+    "description": "Database Toolkit: Config",
+    "keywords": ["dbtk"],
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Joost Faassen",
+            "email": "j.faassen@linkorb.com",
+            "homepage": "http://www.linkorb.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/dbtk/config/issues"
+    },
+    "require": {
+        "symfony/console": "~2.4"
+    },
+    "bin": ["bin/dbtk"],
+    "autoload": {
+        "psr-4": {
+            "DbTk\\Config\\": "src/"
+        }
+    }
+}

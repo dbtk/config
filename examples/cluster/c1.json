@@ -1,0 +1,45 @@
+{
+    "name": "c1",
+    "comment": "Hello world",
+    "servers": [
+        {
+            "id": "c1a.localhost",
+            "address": "127.0.0.1",
+            "port": 3306,
+            "comment": "Part A"
+        },
+        {
+            "id": "c1b.localhost",
+            "address": "127.0.0.2",
+            "port": 3306,
+            "comment": "Part B"
+        },
+        {
+            "id": "c1.localhost",
+            "address": "127.0.0.3",
+            "port": 3306,
+            "comment": "Virtual IP: Writer"
+        },
+        {
+            "id": "c1-reader.localhost",
+            "address": "127.0.0.4",
+            "port": 3306,
+            "comment": "Virtual IP: Reader"
+        }
+    ],
+    "accounts": [
+        {
+            "id": "c1a_admin",
+            "username": "admin",
+            "password": "secret"
+        }
+    ],
+    "connections": [
+        {
+            "id": "c1a_admin_connection",
+            "classes": "admin, test",
+            "server": "c1a.localhost",
+            "account": "c1a_admin"
+        }
+    ]
+}
